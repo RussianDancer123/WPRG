@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div:last-child{
+            color: red;
+        }
+        div > div > div{
+            color: red;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div>Tekst w elemencie potomnym</div>
+        <div>Tekst w elemencie potomnym</div>
+        <div><div>Tekst w elemencie wnuku</div></div>
+        <div>Tekst w elemencie potomnym</div>
+    </div>
+</body>
+</html>
