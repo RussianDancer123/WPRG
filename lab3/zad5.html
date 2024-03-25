@@ -7,24 +7,31 @@
         #parent{
             color: white;
             background-color: black;
-            padding-top: 5px;
+            padding-top: 1px;
             padding-left: 3px;
             width: 300px;
-            height: 600px;
+            height: 650px;
+        }
+        .box{
+            width: 250px;
+            height: 250px;
+            margin-bottom: 20px;
+            color: black;
         }
         #box1{
             background-color: red;
-            width: 250px;
-            height: 250px;
-            float: left;
+        }
+        #box2{
+            background-color: blue;
         }
     </style>
 </head>
 <body>
     <div>
-        <h1 id="parent">My boxes</h1>
-        <div id="box1">box1</div>
-        <div id="box2">box2</div>
+        <h1 id="parent"><p>My boxes</p>
+            <div class="box" id="box1">box1</div>
+            <div class="box" id="box2">box2</div>
+        </h1>
     </div>
 </body>
 </html>
