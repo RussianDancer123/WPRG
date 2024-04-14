@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .header{
+            display: flex;
+            justify-content: space-evenly;
+            background-color: lightgray;
+            padding: 15px;
+        }
+        .main{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .f1, .f2, .f3, .add-inf{
+            border: 1px solid;
+            margin: 5px;
+            padding: 5px;
+        }
+        .welcome{
+            grid-area: we;
+        }
+        .f1{
+            grid-area: f1;
+        }
+        .f2{
+            grid-area: f2;
+        }
+        .f3{
+            grid-area: f3;
+        }
+        .add-inf{
+            grid-area: add;
+        }
+        .main{
+            margin: 20px;
+            display: grid;
+            flex: 1;
+            grid-template-columns: 20% 30% 30% 20%;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "we f1 f2 add"
+                "we f3 f3 add";
+        }
+        .footer{
+            text-align: center;
+            background-color: lightgray;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div>Strona glowna</div>
+        <div>O nas</div>
+        <div>Kontakt</div>
+    </div>
+    <div class="main">
+        <div class="welcome"><b>Witaj na naszej skomplikowanej stronie!</b></div>
+        <div class="f1"><p><b>Funkcja 1</b></p><p>Opis funkcji 1...</p></div>
+        <div class="f2"><p><b>Funkcja 2</b></p><p>Opis funkcji 2...</p></div>
+        <div class="f3"><p><b>Funkcja 3</b></p><p>Opis funkcji 3...</p></div>
+        <div class="add-inf"><p><b>Dodatkowe informacje</b></p><p>...</p></div>
+    </div>
+    <div class="footer">
+        &copy Skomplikowana strona z flexboxem. Wszelkie prawa zastrzezone.
+    </div>
+</body>
+</html>

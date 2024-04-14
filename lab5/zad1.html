@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .container{
+            display: flex;
+            border: 2px solid;
+            height: 200px;
+            justify-content: space-evenly;
+        }
+        .column{
+            text-align: center;
+            background-color: lightblue;
+            flex-grow: 1;
+            margin: 5px;
+            padding-top: 20px;
+        }
+        .flex-container2{
+            align-items: center;
+            display: flex;
+            border: 2px solid;
+            height: 200px;
+            justify-content: center;
+        }
+        .box{
+            text-align: center;
+            background-color: lightblue;
+            margin: 5px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="column">Kolumna 1</div>
+        <div class="column">Kolumna 2</div>
+        <div class="column">Kolumna 3</div>
+    </div>
+
+<hr>
+
+    <div class="flex-container2">
+        <div class="box">Element 1</div>
+        <div class="box">Element 2</div>
+        <div class="box">Element 2</div>
+    </div>
+</body>
+</html>
