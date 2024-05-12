@@ -3,23 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../template/styles.css" />
 </head>
-<style>
-    .zad{
-        border: 1px solid;
-        padding: 5px;
-        display: flex;
-        gap: 5px;
-    }
-    label{
-        border-right: 1px solid;
-        padding-right: 5px;
-    }
-    body div:first-child{
-        border-bottom: none;
-    }
-</style>
 <?php
+include("../template/table.php");
 function zad1($a, $b) {
     if($a > $b){
         $tmp = $a;
@@ -110,39 +97,13 @@ function zad5($str) {
 }
 ?>
 <body>
-    <div class="zad">
-        <label>
-            zad1
-        </label>
-        <?php
-        zad1(1, 5);
-        ?>
-    </div>
-    <div class="zad">
-        <label>zad2</label>
-        <?php
-        zad2(5, 5, 3);
-        ?>
-    </div>
-    <div class="zad">
-        <label>zad3</label>
-        <?php
-        zad3(array(array(1, 2), array(4, 5), array(7, 8)), array(array(1, 2, 3), array(4, 5, 6)));
-        ?>
-    </div>
-    <div class="zad">
-        <label>zad4</label>
-        <?php
-        zad4(199);
-        ?>
-    </div>
-    <div class="zad">
-        <label>zad5</label>
-        <?php
-        zad5("The quick brown fox jumps over the lazy dog");
-        echo "<br>";
-        zad5("abc")
-        ?>
-    </div>
+<?php
+    table("zad 1", "zad1", array(1, 5));
+    table("zad 2", "zad2", array(5, 5, 3));
+    table("zad 3", "zad3", array(array(array(1, 2), array(4, 5), array(7, 8)), array(array(1, 2, 3), array(4, 5, 6))));
+    table("zad 4", "zad4", array(199));
+    table("zad 5", "zad5", array("The quick brown fox jumps over the lazy dog"));
+    table("zad 5", "zad5", array("abc"));
+?>
 </body>
 </html>

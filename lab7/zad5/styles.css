@@ -1,0 +1,16 @@
+#main{
+    background-color: black;
+    color: #fff;
+    padding: 15px;
+    width: 460px;
+}
+#main h2{
+    margin: 0;
+}
+.submit{
+    padding: 6px;
+    text-align: center;
+    width: 150px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
