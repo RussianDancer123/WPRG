@@ -1,5 +1,6 @@
 <?php
 if(isset($_POST)){
+    echo "<hr>";
     if(isset($_POST['simple'])){
         $a = (int)$_POST['var1'];
         $b = (int)$_POST['var2'];

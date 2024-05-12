@@ -6,9 +6,6 @@
     <link rel="stylesheet" href="styles.css"/>
     <link rel="stylesheet" type="text/css" href="zad5/styles.css" />
 </head>
-<?php
-include("controller.php");
-?>
 <body>
 <div id="main">
     <h2>Kalkulator</h2>
@@ -37,6 +34,9 @@ include("controller.php");
         </select><br>
         <input type="submit" value="Oblicz" name="advance" class="submit">
     </form>
+    <?php
+    include("controller.php");
+    ?>
 </div>
 </body>
 </html>
