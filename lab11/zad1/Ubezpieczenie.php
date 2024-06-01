@@ -5,7 +5,11 @@ class Ubezpieczenie extends AutoZDodatkami
     protected int $iloscLat;
 
     public function ObliczCene(): float{
-        return $this->getWartoscUbezpieczenia() * (parent::ObliczCene() * ((100-$this->getIloscLat())/100));
+        if(isset($this->wartoscUbezpieczenia) && isset($this->iloscLat)) {
+            return $this->getWartoscUbezpieczenia() * (parent::ObliczCene() * ((100 - $this->getIloscLat()) / 100));
+        }else{
+            return -1;
+        }
     }
 
     public function getWartoscUbezpieczenia(): float

@@ -6,7 +6,7 @@ class NoweAuto{
 
     public function ObliczCene(): float{
         if(isset($this->price) && isset($this->exchangeRate)){
-            return $this->price*$this->exchangeRate;
+            return $this->getPrice()*$this->getExchangeRate();
         }else{
             return -1;
         }

@@ -5,7 +5,7 @@ class AutoZDodatkami extends NoweAuto
 
     public function ObliczCene(): float{
         if(isset($this->alarm) && isset($this->radio) && isset($this->klimatyzacja)){
-            return parent::ObliczCene() + (($this->alarm + $this->radio + $this->klimatyzacja) * $this->exchangeRate);
+            return parent::ObliczCene() + (($this->getAlarm() + $this->getRadio() + $this->getKlimatyzacja()) * $this->getExchangeRate());
         }else{
             return -1;
         }
